@@ -1,0 +1,62 @@
+/** Clothing:
+shirts (7, 5, 50)
+pants (6, 3, 45)
+shoes (9, 2, 60)
+hats (4, 1, 15)
+socks (6, 1, 10)
+belts (7, 1, 25)
+accessories (8, 8, 15)
+underwear ( 9, 4, 20)
+bras (6, 7, 30)
+bracelets (2, 5, 8)
+watches (10, 8, 45)
+backpacks (10, 9, 35)
+blankets (7, 6, 25)
+rugs (8, 10, 45)
+towels (7, 3, 15)
+**/ 
+
+- create a clothing store database
+
+CREATE TABLE clothing (id INTEGER PRIMARY KEY, name TEXT, rating INTEGER, aisle INTEGER, price INTEGER); 
+
+INSERT INTO clothing VALUES (1, "shirts", 7, 5, 50);
+INSERT INTO clothing VALUES (2, "pants", 6, 3, 45);
+INSERT INTO clothing VALUES (3, "shoes", 9, 2, 60);
+INSERT INTO clothing VALUES (4, "hats", 4, 1, 15);
+INSERT INTO clothing VALUES (5, "socks", 6, 1, 10);
+INSERT INTO clothing VALUES (6, "belts", 7, 1, 25);
+INSERT INTO clothing VALUES (7, "accessories", 8, 8, 15);
+INSERT INTO clothing VALUES (8, "underwear", 9, 4, 20);
+INSERT INTO clothing VALUES (9, "bras", 6, 7, 30);
+INSERT INTO clothing VALUES (10, "bracelets", 2, 5, 8);
+INSERT INTO clothing VALUES (11, "watches", 10, 8, 45);
+INSERT INTO clothing VALUES (12, "backpacks", 10, 9, 35);
+INSERT INTO clothing VALUES (13, "blankets", 7, 6, 25);
+INSERT INTO clothing VALUES (14, "rugs", 8, 10, 45);
+INSERT INTO clothing VALUES (15, "towels", 7, 3, 15);
+
+displayed clothing items by price 
+
+SELECT * FROM clothing ORDER BY price;
+
+created table showing item and rating
+
+CREATE TABLE rating (id INTEGER PRIMARY KEY, rating INTEGER); 
+
+INSERT INTO rating VALUES (1, 7); 
+INSERT INTO rating VALUES (2, 6); 
+INSERT INTO rating VALUES (3, 9);
+INSERT INTO rating VALUES (4, 4);
+INSERT INTO rating VALUES (5, 6);
+INSERT INTO rating VALUES (6, 7);
+INSERT INTO rating VALUES (7, 8);
+INSERT INTO rating VALUES (8, 9);
+INSERT INTO rating VALUES (9, 6);
+INSERT INTO rating VALUES (10, 2);
+INSERT INTO rating VALUES (11, 10);
+INSERT INTO rating VALUES (12, 10);
+INSERT INTO rating VALUES (13, 7);
+INSERT INTO rating VALUES (14, 8);
+INSERT INTO rating VALUES (15, 7);
+SELECT * FROM rating;
